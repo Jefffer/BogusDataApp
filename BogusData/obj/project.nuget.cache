@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "QAyWlnneqzS+cwNAnJFAB/Ifv2i1+X4AQZO0bAhvMSZnJqBU2aVeCr/bmScOzTa4yCjzHcIZeecaXbqqe5KGAQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\jsrexterno.vsti\\source\\repos\\BogusDataApp\\BogusData\\BogusData.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\jsrexterno.vsti\\.nuget\\packages\\bogus\\34.0.2\\bogus.34.0.2.nupkg.sha512"
+  ],
+  "logs": []
+}
