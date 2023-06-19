@@ -8,6 +8,7 @@ public class DataGenerator
 
     public DataGenerator()
     {
+        // Seed is for telling the code that always start in the same "random" value
         Randomizer.Seed = new Random(123);
 
         personModelFake = new Faker<PersonModel>()
@@ -23,8 +24,21 @@ public class DataGenerator
             .RuleFor(u => u.Rating, f => f.PickRandom<CreditRating>());
     }
 
+    /// <summary>
+    /// Generates only one person at once
+    /// </summary>
+    /// <returns></returns>
     public PersonModel GeneratePerson()
     {
         return personModelFake.Generate();
+    }
+
+    /// <summary>
+    /// Generates many people as we want (using .Take when calling)
+    /// </summary>
+    /// <returns></returns>
+    public IEnumerable<PersonModel> GeneratePeople()
+    {
+        return personModelFake.GenerateForever();
     }
 }
